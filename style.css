@@ -1,0 +1,15 @@
+h1{
+    color: blue;
+    background-color: blanchedalmond;
+    width: 200px; 
+    text-align:center;
+    font-weight: 400;
+    font-family:monospace;
+}
+button{
+    color: brown;
+    background-color: aliceblue;
+    text-decoration:underline;
+    text-decoration-style: wavy;
+    height: 50px;
+}
