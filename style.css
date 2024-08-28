@@ -1,15 +1,25 @@
-h1{
-    color: blue;
-    background-color: blanchedalmond;
-    width: 200px; 
-    text-align:center;
-    font-weight: 400;
-    font-family:monospace;
+*{
+    background-color:#f1faee;
 }
 button{
-    color: brown;
-    background-color: aliceblue;
-    text-decoration:underline;
-    text-decoration-style: wavy;
-    height: 50px;
+    font-size: 20px;
+    background-color:#a8dadc ;
+    color: #1d3557;
+
+}
+#su{
+    background-color: #1d3557;
+    color: #f1faee;
+}
+span{
+    font-size:15px;
+    background-color:#e63946 ;
+    color: #f1faee;
+}
+a:hover{
+    color: #e63946;
+}
+
+.post button:hover{
+    color: #f1faee;
 }
