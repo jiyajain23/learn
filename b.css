@@ -1,0 +1,34 @@
+#one{
+    background-color: #a1cca5;
+    border-width:5px;
+    border-color:#415d43;
+    border-style: inset;
+    margin-bottom:1px;
+    margin-left: 20px;
+
+
+}
+#two{
+    background-color: #8fb996;
+    border:4px solid #111d13;
+    margin-left: 40px;
+    margin-bottom: 1px;
+}
+#three{
+    background-color:#709775;
+    border: 3px dashed black;
+    margin-left: 60px;
+    margin-bottom: 1px;
+
+}
+div{
+    width: 200px;
+    height: 200px;
+    padding:10px;
+}
+h1{
+    background-color: rgb(195, 211, 170);
+    width: 100px;
+    margin: 0%;
+
+}
