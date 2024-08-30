@@ -1,34 +1,14 @@
-#one{
-    background-color: #a1cca5;
-    border-width:5px;
-    border-color:#415d43;
-    border-style: inset;
-    margin-bottom:1px;
-    margin-left: 20px;
+section{
+   width:60%;
+   height:800px;
+   
+   margin: 0 auto;
+   background-image:url("https://images.unsplash.com/photo-1724582120489-a2d6e70854dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1Mnx8fGVufDB8fHx8fA%3D%3D") ;
+   background-size: cover;
+   background-position: 50%;
+}  
 
-
-}
-#two{
-    background-color: #8fb996;
-    border:4px solid #111d13;
-    margin-left: 40px;
-    margin-bottom: 1px;
-}
-#three{
-    background-color:#709775;
-    border: 3px dashed black;
-    margin-left: 60px;
-    margin-bottom: 1px;
-
-}
-div{
-    width: 200px;
-    height: 200px;
-    padding:10px;
-}
 h1{
-    background-color: rgb(195, 211, 170);
-    width: 100px;
-    margin: 0%;
-
+   font-size: 100px;
+   color: white;
 }
