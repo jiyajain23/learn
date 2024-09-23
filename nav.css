@@ -1,0 +1,10 @@
+:root{
+    --color:#83c5be;
+    --sec:#edf6f9;
+    --bor:006d77;
+}
+nav{
+    width:20%;
+    height:10%;
+    display: flex;
+}
