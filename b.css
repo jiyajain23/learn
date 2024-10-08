@@ -23,22 +23,22 @@ li{
     height:1000px;
     width:1000px;
     margin-left:200px ;
-    display: inline;
+    display: inline-block;
 }
 .b1{
-    position: relative;
+    position: absolute;
     background-color: aqua;
     height: 500px;
     width:400px;
     margin: 100px;
-    display: inline;
+    float: left;
 }
 .b2{
-    position: relative;
+    position:absolute;
     background-color: rgb(117, 186, 186);
     height: 500px;
     width:400px;
-    margin: 100px;
-    display: inline;
+    margin: 600px;
+    float: right;
     
 }
