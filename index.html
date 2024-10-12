@@ -5,19 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>    
     <style>
-        .box{
-            border: 5px solid black;
-            box-shadow: 3px 2px 1px 1px yellow;
-            outline:10px solid blue ;
-            outline-offset: 6px;
-        }
+       .contain{
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: 40px 42px;
+        grid-template-rows: 42px 44px;
+       
+       }
+       .item{
+        height: 30px;
+        width: 30px;
+        background-color:orangered;
+        border: 2px solid rgb(94, 47, 180);
+
+       }
+       .item4{
+        grid-row:1/2;
+        grid-column:1/2;
+       }
     </style>
 </head>
 <body>
-    <div>
-        <h1 class="box">i am a box</h1>
+    <div class="contain">
+        <div class="item item4">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item4">4</div>
+        <div class="item">5</div>
     </div>
-    
-
 </body>
 </html>
