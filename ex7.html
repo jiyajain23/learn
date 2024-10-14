@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlexBOX</title>
+    <title>GRID</title>
     <style>
         .con{
             display: flex;
@@ -37,9 +37,22 @@
        }
        body{
         background-color: black;
-    
        }
-      
+       .grid-item{
+        width: 70px;
+        height: 100px;
+        background-color:lightblue;
+        margin: 1%;
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+
+       }
+       .grid{
+        display:grid;
+        grid-template-columns:100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+       }
     </style>
 </head>
 <body>
@@ -54,6 +67,18 @@
         <div class="item">Support</div>
         <div class="item">Our Company</div>
     </div>
-</nav>
+    </nav>
+    <div class="grid">
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+    </div>
 </body>
 </html>
