@@ -30,6 +30,8 @@
         nav{
             border: 2px solid rgb(249, 249, 249);
             background-color: white;
+            max-width: 100vw;
+            min-width: 1145px;
         }
        *{
         margin: 0;
@@ -37,7 +39,7 @@
        }
        body{
         background-color:white;
-        display: flexbox;
+        /* display: flexbox; */
        }
        .grid-item{
         width: 220px;
@@ -46,6 +48,7 @@
         margin: 20px;
         font-weight: 1000;
         padding: 30px;
+        text-align: center;
 
         
         
@@ -55,6 +58,7 @@
         margin: 10px 10px;
         grid-template-columns:1fr 1fr 1fr ;
         grid-template-rows: 1fr 1fr 1fr;
+        text-align: center;
 
        }
        main{
@@ -78,6 +82,7 @@
         border: 1px solid white;
         padding: 3px;
         color: white;
+        cursor: pointer;
         border-radius: 18% 18%;
     }
     span a{
@@ -96,7 +101,7 @@
    .rand{
     color: grey;
     font-size: 12px;
-        margin-left: 20%;
+        /* margin-left: 20%; */
    }
    .fir{
     display: flex;
@@ -127,24 +132,25 @@
     color: white;
     background-color: #00b6d1;
     border: none;
+    cursor: pointer;
     padding: 12px 14px;
     font-weight: 700;
     border-radius: 6px;
    }
-.sec{
+    .sec{
     display: flex;
     align-items: center;
-    margin-left: 289px;
+    justify-content: center;
+    /* margin-left: -40%; */
     margin-top:43px;
+    max-width: 70vw;
 }
 
    section div img{
     width:43px;
     height: 43px;
     /* margin-top:43px; */
-    border: 2px solid black;
-    border-radius: 50%;
-
+    /
    }
    section div span{
     font-size: 23px;
@@ -155,6 +161,13 @@
    }
    .small{
     font-size: 13px;
+   }
+   @media screen and (max-width:1145px){
+    .grid{
+        grid-template-columns: 1fr;
+        margin:auto;
+    }
+    
    }
     </style>
 </head>
@@ -180,9 +193,9 @@
 </section>
 <section class="sec">
     <div class="download">
-        <span>
+        
         <img src="https://www.ultraedit.com/wp-content/uploads/2022/11/UE.png" alt="">
-      Download UltraEdit </span>
+        <span>Download UltraEdit </span>
         <span class="small">v2023.1(released 08/16/2023) | Hotfix</span>
     </div>
 </section>
