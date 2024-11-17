@@ -13,7 +13,8 @@
             position: absolute;
             bottom: 0;
             left: 0; 
-            animation: xaxis 4s linear 1s 3 alternate-reverse,yaxis 4s cubic-bezier(0.8,-0.55, 0.42, 0.57) 1s 3 alternate-reverse; 
+            animation: xaxis 4s linear infinite, yaxis 2s ease-out infinite alternate; 
+            an
         }
 
         .container {
@@ -24,20 +25,20 @@
         }
         @keyframes xaxis{
             from{
-                transform: translateX(1vw)
+                left:0;
                 
             }
             to{
-                transform: translatex(50vw);
+                left:100%;
             }
         }
         
         @keyframes yaxis {
             from{
-            transform: translateY(-2vh);
+                bottom:0;
             }
             to{
-                transform: translateY(-60vh);
+                bottom:100%;
             }
         }
     </style>
