@@ -1,0 +1,200 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;700;900&family=Poppins:ital,wght@0,400;0,600;0,700;1,800&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    max-width: 75vw;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    padding:0 16px;
+    height: 100px;
+    z-index: 10;
+   
+}
+
+nav img {
+    width: 153px;
+    z-index:30;
+}
+nav button{
+    z-index:30;
+}
+.main {
+    height: 633px;
+    width: 100%;
+    background-image:url("https://github.com/CodeWithHarry/Sigma-Web-Dev-Course/blob/main/Video%2053/assets/images/bg.jpg?raw=true");
+    background-repeat: no-repeat;
+    background-position: center center;
+    position:relative;
+    background-size: max(1200px,100vw);
+    
+
+    
+} 
+.main .box{
+    height: 633px;
+    width: 100%;
+    opacity: 0.50;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+    
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 1px 44px;
+    font-size: 15px;
+    border-radius: 4px;
+    font-weight: 200;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+
+
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    height: 533px;
+
+}
+.hero :nth-child(1){
+    font-size: 50px; 
+    font-family:'Martel Sans','Poppins';
+    font-weight: bolder;
+    z-index: 20;
+}
+.hero :nth-child(2){
+    font-size: 25px; 
+    font-family:'Martel Sans','Poppins';
+    font-weight:700;
+    z-index: 20;
+}
+.hero :nth-child(3){
+    font-size: 15px; 
+    font-family:'Martel Sans','Poppins';
+    font-weight:400;
+    z-index: 20;
+}
+.hero .email{
+    display: flex;
+    gap:16px;
+    align-items: center;
+    justify-content: center;
+
+}
+.hero .email>input{
+    font-size: 15px;
+    color: white;
+    padding: 10px 200px 10px 5px;
+    background-color: rgba(31, 28, 28, 0.637);
+}
+.sep{
+    height: 7px;
+    width: 100%;
+    background-color: grey;
+    position: relative;
+}
+.tr{
+    max-width:75vw ;
+    margin:23px 62px
+
+
+}
+h2{
+    color: white ;
+    padding: 13px 0px;
+    font-size:24px ;
+    font-family:'Martin Sans','Poppins' ;
+    font-weight: 500;
+}
+.top{
+    display: grid;
+    margin:2px 2px 2px 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+}
+.top img{
+    border-radius: 10px;
+}
+.reas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:24px ;
+    height: 260px;
+    font-family:'Martin Sans','Poppins' ;
+    margin: 2px 2px 2px 50px;
+    font-weight: 400;
+}
+.reas .join{
+    background-color: rgb(30, 20, 37);
+    border: 1px solid rgba(0, 0, 0, 0.414);
+    border-radius: 20px;
+}
+.reas .join :nth-child(1){
+    font-size: 24px;
+    color:white;
+    font-family:'Martin Sans','Poppins' ;
+    margin: 23px 23px;
+    font-weight: 400;
+
+}
+.reas .join :nth-child(2){
+    font-size: 14px;
+    color:white;
+    font-family:'Martin Sans','Poppins' ;
+    margin: 23px 23px;
+    font-weight: 200;
+
+}
+.faq{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap:24px ;
+    height: 260px;
+    font-family:'Martin Sans','Poppins' ;
+    margin: 2px 2px 2px 50px;
+    font-weight: 400;
+    
+
+
+}
+.faq div{
+    display: flex;
+    align-items: center;
+    background-color:rgba(45,45,45,1);
+    color: white;
+    font-size: 24px;
+    height: 54px;
+    
+}

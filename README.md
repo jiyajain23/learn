@@ -1,4 +1,4 @@
 # learn
 <br>
 Author - Jiya Jain
-<p> Im learning how to use github </p>
+<p> I'm learning about web development and Python</p>
