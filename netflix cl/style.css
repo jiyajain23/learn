@@ -1,11 +1,13 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;700;900&family=Poppins:ital,wght@0,400;0,600;0,700;1,800&display=swap');
 
 
 *{
     padding: 0;
     margin: 0;
+    font-family:'Martel Sans', 'Poppins';
+    color: white;
 }
+
 body {
     background-color: black;
 }
@@ -17,32 +19,37 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     margin: auto;
-    padding:0 16px;
+    padding: 0 16px;
     height: 100px;
     z-index: 10;
-   
+
 }
 
 nav img {
     width: 153px;
-    z-index:30;
+    z-index: 30;
 }
-nav button{
-    z-index:30;
+
+nav button {
+    z-index: 30;
 }
+main{
+    object-fit: cover;
+    object-position: center;
+    background-image: url("https://github.com/CodeWithHarry/Sigma-Web-Dev-Course/blob/main/Video%2053/assets/images/bg.jpg?raw=true");
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    background-size:max(100%,1200px);
+}
+
 .main {
     height: 633px;
     width: 100%;
-    background-image:url("https://github.com/CodeWithHarry/Sigma-Web-Dev-Course/blob/main/Video%2053/assets/images/bg.jpg?raw=true");
-    background-repeat: no-repeat;
-    background-position: center center;
-    position:relative;
-    background-size: max(1200px,100vw);
-    
 
-    
-} 
-.main .box{
+}
+
+.main .box {
     height: 633px;
     width: 100%;
     opacity: 0.50;
@@ -51,7 +58,7 @@ nav button{
     background-color: black;
 }
 
-    
+
 
 .btn {
     padding: 3px 8px;
@@ -67,7 +74,7 @@ nav button{
 .btn-red {
     background-color: red;
     color: white;
-    padding: 1px 44px;
+    padding:1px 44px;
     font-size: 15px;
     border-radius: 4px;
     font-weight: 200;
@@ -79,122 +86,277 @@ nav button{
 
 
 }
-.hero{
+
+.hero {
     display: flex;
     flex-direction: column;
     color: white;
     align-items: center;
     justify-content: center;
     z-index: 10;
-    height: 533px;
+    height: 60%;
 
 }
-.hero :nth-child(1){
-    font-size: 50px; 
-    font-family:'Martel Sans','Poppins';
+
+.hero :nth-child(1) {
+    font-size: 50px;
+    font-family: 'Martel Sans', 'Poppins';
     font-weight: bolder;
     z-index: 20;
 }
-.hero :nth-child(2){
-    font-size: 25px; 
-    font-family:'Martel Sans','Poppins';
-    font-weight:700;
+
+.hero :nth-child(2) {
+    font-size: 25px;
+    font-family: 'Martel Sans', 'Poppins';
+    font-weight: 700;
     z-index: 20;
 }
-.hero :nth-child(3){
-    font-size: 15px; 
-    font-family:'Martel Sans','Poppins';
-    font-weight:400;
+
+.hero :nth-child(3) {
+    font-size: 15px;
+    font-family: 'Martel Sans', 'Poppins';
+    font-weight: 400;
     z-index: 20;
 }
-.hero .email{
+
+.hero .email {
     display: flex;
-    gap:16px;
+    gap: 16px;
     align-items: center;
     justify-content: center;
 
 }
-.hero .email>input{
+
+.hero .email>input {
     font-size: 15px;
     color: white;
     padding: 10px 200px 10px 5px;
     background-color: rgba(31, 28, 28, 0.637);
 }
-.sep{
+
+.sep {
     height: 7px;
     width: 100%;
     background-color: grey;
     position: relative;
 }
-.tr{
-    max-width:75vw ;
-    margin:23px 62px
 
-
+.tr {
+    max-width: 75vw;
+    margin: 23px 62px
 }
-h2{
-    color: white ;
+
+h2 {
+    color: white;
     padding: 13px 0px;
-    font-size:24px ;
-    font-family:'Martin Sans','Poppins' ;
-    font-weight: 500;
+    font-size: 24px;
+    font-family: 'Martin Sans', 'Poppins';
+    font-weight: 900;
 }
-.top{
+
+.top {
     display: grid;
-    margin:2px 2px 2px 50px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    margin: 2px 2px 2px 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
-.top img{
+
+.top img {
     border-radius: 10px;
 }
-.reas{
+
+.top svg {
+    transform: translateX(-250px);
+}
+
+.reas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap:24px ;
-    height: 260px;
-    font-family:'Martin Sans','Poppins' ;
-    margin: 2px 2px 2px 50px;
+    gap: 24px;
+    font-family: 'Martin Sans', 'Poppins';
+    margin: 2px 50px 2px 50px;
     font-weight: 400;
 }
-.reas .join{
+
+.reas .join {
     background-color: rgb(30, 20, 37);
     border: 1px solid rgba(0, 0, 0, 0.414);
     border-radius: 20px;
 }
-.reas .join :nth-child(1){
+
+.reas .join :nth-child(1) {
     font-size: 24px;
-    color:white;
-    font-family:'Martin Sans','Poppins' ;
+    color: white;
+    font-family: 'Martin Sans', 'Poppins';
+    margin: 23px 23px;
+    font-weight: 700;
+
+}
+
+.reas .join :nth-child(2) {
+    font-size: 14px;
+    color: white;
+    font-family: 'Martin Sans', 'Poppins';
     margin: 23px 23px;
     font-weight: 400;
 
 }
-.reas .join :nth-child(2){
-    font-size: 14px;
-    color:white;
-    font-family:'Martin Sans','Poppins' ;
-    margin: 23px 23px;
-    font-weight: 200;
 
-}
-.faq{
+.faq {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap:24px ;
-    height: 260px;
-    font-family:'Martin Sans','Poppins' ;
-    margin: 2px 2px 2px 50px;
+    gap: 10px;
+    font-family: 'Martin Sans', 'Poppins';
+    margin: 2px 70px 2px 70px;
+
     font-weight: 400;
-    
+
 
 
 }
-.faq div{
+
+.faq div {
     display: flex;
     align-items: center;
-    background-color:rgba(45,45,45,1);
+    background-color: rgba(45, 45, 45, 1);
     color: white;
     font-size: 24px;
     height: 54px;
+    padding: 2px 80px 2px 80px;
+    justify-content: space-between;
+
+}
+
+.end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 30px;
+}
+
+.end div:nth-child(1) {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 30px 30px;
+    font-family: 'Martin Sans', 'Poppins';
+}
+
+.end div:nth-child(2) input {
+    font-size: 15px;
+    color: white;
+    padding: 12px 200px 12px 5px;
+    background-color: rgba(31, 28, 28, 0.637);
+
+}
+
+.end div:nth-child(2) button {
+    background-color: red;
+    color: white;
+    padding: 6px 44px;
+    font-size: 24px;
+    border-radius: 4px;
+    font-weight: 200;
+}
+
+.foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 95vw;
+    margin-left: 5vw;
+
+
+}
+
+.foot>div {
+    margin: 24px 0px;
+    color: rgba(255, 255, 255, 0.556);
+
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1px;
+    font-family: 'Martin Sans', 'Poppins';
+    margin: 1x 1px;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.556);
+
+}
+
+@media screen and (max-width:1050px){
+    .main{
+        width: 100%;
+
+    }
+
+    .top {
+        display: grid;
+        margin: 2px 2px 2px 50px;
+        grid-template-columns: 1fr;
+    }
+    .hero :nth-child(1) {
+        font-size: 25px;
+       
+    }
     
+    .hero :nth-child(2) {
+        font-size: 12.5px;
+        
+    }
+    
+    .hero :nth-child(3) {
+        font-size: 7.5px;
+    }
+        
+    .reas {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+        font-family: 'Martin Sans', 'Poppins';
+        margin: 2px 50px 2px 50px;
+        font-weight: 400;
+    }
+    .faq{
+        margin: 2px 7px 2px 7px;
+    }
+    .faq div {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        padding: 0px 24px 0px 4px;
+        justify-content: space-between;
+    }
+    .hero .email {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+    .email{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+    .hero .email>input {
+        font-size: 15px;
+        padding: 1px 20px 1px 5px;
+        
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
 }
