@@ -43,22 +43,28 @@ else{
 
 let rand2=Math.random()
 // var b = null
-if (rand2 <= 0.2) {
-    var b = document.body.firstElementChild.children[0]
+// if (rand2 <= 0.2) {
+//     var b = document.body.firstElementChild.children[0]
+// }
+// else if(rand2 <= 0.4 && rand2 > 0.2) {
+//     var b = document.body.firstElementChild.children[1]
+// }
+// else if(rand2 <= 0.6 && rand2> 0.4) {
+//     var b = document.body.firstElementChild.children[2]
+// }
+// else if(rand2 <= 0.8 && rand2 > 0.6) {
+//     var b = document.body.firstElementChild.children[3]
+// }
+// else {
+//     var b = document.body.firstElementChild.children[4]
+// }
+const b= document.body.firstElementChild.children
+for (let  index= 0; index < document.body.firstElementChild.childElementCount; index++) {
+    let el =b[index] ;
+    el.style.color=c,
+    el.style.backgroundColor=bc
 }
-else if(rand2 <= 0.4 && rand2 > 0.2) {
-    var b = document.body.firstElementChild.children[1]
-}
-else if(rand2 <= 0.6 && rand2> 0.4) {
-    var b = document.body.firstElementChild.children[2]
-}
-else if(rand2 <= 0.8 && rand2 > 0.6) {
-    var b = document.body.firstElementChild.children[3]
-}
-else {
-    var b = document.body.firstElementChild.children[4]
-}
-b.style.color=c
-console.log("b.style.color=c")
-b.style.backgroundColor=bc
-console.log("b.style.b=bc")
+// b.style.color=c
+// console.log("b.style.color=c")
+// b.style.backgroundColor=bc
+// console.log("b.style.b=bc")
