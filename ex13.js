@@ -5,7 +5,8 @@ function CreateCard(title, cName, views, mAgo, thumbnail) {
     else if (views >= 1000000 && views < 100000000) {
         finalviews = views / 1000000 + "M"
     }
-
+    const cont=document.createElement("div")
+    document.body.insertAdjacentElement("afterbegin",cont)
     let el = document.body.firstElementChild
     const imgdiv = document.createElement("div")
     imgdiv.className = "image"
@@ -27,10 +28,11 @@ function CreateCard(title, cName, views, mAgo, thumbnail) {
     el.style.border="1px solid rgb(237 242 245 / 78%)"
     el.style.color = "white"
     el.style.padding="3px"
+    el1.firstElementChild.style.width="10vw"
     let styel2=el2.children[0].style
     let styel21=el2.children[1].style
     styel2.fontSize = "23px"
-    styel2.fontWeight="600"
+    styel2.fontWeight="500"
     styel2.color = "white"
     styel2.padding = "0px 18px"
     styel21.color = "rgb(237 242 245 / 78%)"
@@ -45,4 +47,7 @@ function CreateCard(title, cName, views, mAgo, thumbnail) {
 
 
 
-CreateCard("Installing VS Code & How Websites Work | Sigma Web Development Course - Tutorial #1", "CodeWithHarry", 23400000, "2 months ago", "https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLB6VzxANxt3dHm91HW9lLfDlxvmuA")
+CreateCard("Installing VS Code & How Websites Work | Sigma Web Development Course - Tutorial #1", "CodeWithHarry", 3500000, "1 year ago", "imgs/hqdefault.avif")
+CreateCard("Your First HTML website | Sigma Web Development Course - Tutorial #2", "CodeWithHarry", 1300000, "1 year ago", "imgs/hqdefault (1).avif")
+CreateCard("Basic Structure of an HTML Website | Sigma Web Development Course - Tutorial #3", "CodeWithHarry", 839000, "11 months ago", "imgs/hqdefault (2).avif")
+CreateCard("Heading, Paragraphs, And Links | Sigma Web Development Course - Tutorial #4", "CodeWithHarry", 756000, "10 months ago", "imgs/hqdefault (3).avif")
