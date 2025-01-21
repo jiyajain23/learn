@@ -1,36 +1,36 @@
 //PS6 Q1,2,3,4
 
-/* function check() {
-    let age = prompt("enter Age")
-    if (age >= 18) {
-        console.log("You Can Drive")
-        alert("You Can Drive!!")
-    }
-    else if (age < 0) {
-        alert("Negative age cannot be entered")
+// function check() {
+//     let age = prompt("enter Age")
+//     if (age >= 18) {
+//         console.log("You Can Drive")
+//         alert("You Can Drive!!")
+//     }
+//     else if (age < 0) {
+//         alert("Negative age cannot be entered")
 
-    }
-    else if (age>4){
-        location.href="https://google.com"
-    }
-    else {
-        console.log("You Cannot Drive")
-        alert("You Cannot Drive!!")
-    }
+//     }
+//     else if (age>4){
+//         location.href="https://google.com"
+//     }
+//     else {
+//         console.log("You Cannot Drive")
+//         alert("You Cannot Drive!!")
+//     }
 
-}
-check()
-var i=0;
-while (i==0){
-    if (confirm("Press Ok to enter age again") == true) {
-        check()
-    }
-    else{
-        i=1
-    }
+// }
+// check()
+// var i=0;
+// while (i==0){
+//     if (confirm("Press Ok to enter age again") == true) {
+//         check()
+//     }
+//     else{
+//         i=1
+//     }
 
-}
-*/
+// }
+
 
 //PS6 Q5
 /*
@@ -142,50 +142,38 @@ document.body.style.backgroundColor=c
 //     console.log("Getting Modules")
 //     let data = await getdata()
 //     console.log(data)
-//     console.log("done")
+//    console.log("done")
 // }
 
 // main()
 
-// async function x(){
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//             reject("This promise has been rejected")
-//         }, 3000);
-//     })
+// const animal={
+//     "eats":"very much",
+//     "runs":"fast"
 // }
-// async function prom() {
-//     console.log("SOMETHING")
-//     dta= await x().catch((err)=>{
-//         console.log(err)
-//     })
-//     console.log("done")
+
+// console.log(animal.eats)
+
+// const bunny={
+//     "food":"carrot"
 // }
-// prom()
+//bunny.__proto__=animal;
 
-var prom1=new Promise((resolve, reject) => {
-    setTimeout(() => {
-        return resolve("one done")
-    }, 2000);
-    
-})
-var prom2=new Promise((resolve, reject) => {
-    setTimeout(() => {
-        return (resolve("two done"))
-    }, 2000);
-    
-})
-var prom3=new Promise((resolve, reject) => {
-    setTimeout(() => {
-        return (resolve("three done"))
-    }, 2000);
-    
-})
-async function threeproms () {
+class animals{
+    constructor(name){
+        this.name=name
+        console.log("created")
 
-    let x= await Promise.all([prom1,prom2,prom3])
-    console.log(x)
-    console.log("done")
+    }
+
+    eats(){
+        console.log("eats veggies")
+    }
+    runs(){
+        console.log("runs very fast")
+    }
 }
 
-threeproms()
+
+let a = new animals("bunny")
+console.log(a)
