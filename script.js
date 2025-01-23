@@ -159,21 +159,21 @@ document.body.style.backgroundColor=c
 // }
 //bunny.__proto__=animal;
 
-class animals{
-    constructor(name){
-        this.name=name
-        console.log("created")
+// class animals{
+//     constructor(name){
+//         this.name=name
+//         console.log("created")
 
-    }
+//     }
 
-    eats(){
-        console.log("eats veggies")
-    }
-    runs(){
-        console.log("runs very fast")
-    }
-}
+//     eats(){
+//         console.log("eats veggies")
+//     }
+//     runs(){
+//         console.log("runs very fast")
+//     }
+// }
 
 
-let a = new animals("bunny")
-console.log(a)
+// let a = new animals("bunny")
+// console.log(a)

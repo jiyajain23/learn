@@ -205,11 +205,11 @@ q2*/
 
 
 /*q3*/
-(function jj() {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            return console.log(resolve("resolved"))
-        },1000);
-    })
+// (function jj() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log(resolve("resolved"))
+//         },1000);
+//     })
     
-})()
+// })()
