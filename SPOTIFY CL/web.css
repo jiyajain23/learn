@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Work Sans", serif;
+    
+}
+
+body{
+    background-color: black;
+    color: white;
+   
+} 
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+.middle{
+    gap:15px;
+    align-items: center;
+    justify-content: center;
+}
+.play{
+    background-color:#1f1f1f;
+    border-radius: 34px;
+    padding: 0.7rem 7rem;
+  
+    position: relative;
+    font-size:1.1rem;
+}
+
+.play img{
+    position:absolute;
+    left: 15px;
+}
+.btns{
+    gap:30px;
+    font-size: medium;
+}
+.grey-btn{
+    border: none;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.666);
+    height: min-content;
+    margin-top: 8%;
+    font-weight: 600;
+}
+
+
+.log-btn{
+    border-radius: 30%;
+    height: min-content;
+    margin-top:5px;
+    padding: 0.85rem 1.7rem;
+    font-weight: 700;
+}
+
+main{
+    gap:20px;
+    height: 85vh;
+}
+.left{
+   
+    width: 25%;
+    position: relative;
+}
+.left img{
+    margin: 0px 20px ;
+}
+.left>*{
+    font-size:1.1rem;
+    font-weight: 600;
+}
+.footer{
+    position:absolute;
+    bottom:2vh;
+    gap: 10px;
+}
+.footer a{
+    color: grey;
+    font-size: 0.6rem;
+}
+.right{
+    width: 75%;
+    padding:12px 32px;
+}
+.artists{
+    font-weight: 900;
+}
+.cardContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    gap:25px;
+   
+}
+.pri{
+    position: relative;
+}
+.pri img{
+    border: 2px solid #1f1f1f;
+    border-radius: 50%;
+    overflow: hidden;
+    gap: 3px;
+}
+.pri h4{
+    width: min-content;
+}
+.pri h5{
+    width: min-content;
+}
+.pri svg{
+    opacity: 0;
+    position: absolute;
+    right:19px;
+    bottom:0;
+}
+.pri:hover{
+    background-color:#1f1f1f;
+    transition: all 0.5s ease-out;
+    
+}
+
+    bottom:20px;
+    opacity: 1;
+   

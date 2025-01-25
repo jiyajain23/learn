@@ -1,0 +1,24 @@
+
+
+section>img{
+    filter: invert();
+   
+    
+}
+
+.flex{
+    display: flex;
+    
+}
+.m1{
+    margin-top: 5px;
+}
+.m2{
+    margin-top: 15px;
+}
+.bg{
+    background-color:#121212 ;
+}
+.br{
+    border-radius: 25px;
+}
