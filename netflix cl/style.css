@@ -21,16 +21,14 @@ nav {
     margin: auto;
     padding: 0 16px;
     height: 100px;
-    z-index: 10;
 
 }
 
-nav img {
+nav span {
     width: 153px;
     z-index: 30;
 }
-
-nav button {
+nav div {
     z-index: 30;
 }
 main{
@@ -157,7 +155,7 @@ h2 {
 
 .top {
     display: grid;
-    margin: 2px 2px 2px 50px;
+    margin: 2px 3% 2px 3%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
@@ -255,7 +253,7 @@ h2 {
 .end div:nth-child(2) button {
     background-color: red;
     color: white;
-    padding: 6px 44px;
+    padding: 4px 34px;
     font-size: 24px;
     border-radius: 4px;
     font-weight: 200;
@@ -300,8 +298,9 @@ footer a {
 
     .top {
         display: grid;
-        margin: 2px 2px 2px 50px;
+        margin: 2px 0px;
         grid-template-columns: 1fr;
+        gap:20px;
     }
     .hero :nth-child(1) {
         font-size: 25px;
