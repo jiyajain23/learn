@@ -76,6 +76,10 @@ main{
 .lib{
     justify-content: space-between;
 }
+.songlist{
+    color: white;  
+ 
+}
 
 .left img{
     margin: 10px 20px ;
@@ -88,6 +92,20 @@ main{
     font-size:1.1rem;
     font-weight: 600
 
+}
+
+.songlist li{
+    display: flex;
+    width: 23vw;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    gap: 6px;
+    border: 1px solid rgb(74, 74, 74);
+    margin:0px 5px;
+}
+.info{
+    width: 14vw;
 }
 .footer{
     position:absolute;
@@ -124,12 +142,7 @@ main{
     overflow: hidden;
     gap: 3px;
 }
-.pri h4{
-    width: min-content;
-}
-.pri h5{
-    width: min-content;
-}
+
 .pri svg{
     opacity: 0;
     position: absolute;
