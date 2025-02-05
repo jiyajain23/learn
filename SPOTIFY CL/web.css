@@ -28,6 +28,7 @@ nav{
     gap:15px;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .play{
     background-color:#1f1f1f;
@@ -46,6 +47,7 @@ nav{
 .btns{
     gap:30px;
     font-size: medium;
+   
 }
 .grey-btn{
     border: none;
@@ -54,6 +56,7 @@ nav{
     height: min-content;
     margin-top: 18px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 
@@ -63,6 +66,7 @@ nav{
     margin-top:5px;
     padding: 0.85rem 1.7rem;
     font-weight: 700;
+    cursor: pointer;
 }
 
 main{
@@ -94,18 +98,24 @@ main{
 
 }
 
-.songlist li{
+.songlist ul li{
     display: flex;
-    width: 23vw;
+    width: auto;
     align-items: center;
-    justify-content: center;
-    font-size: 13px;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
     gap: 6px;
     border: 1px solid rgb(74, 74, 74);
-    margin:0px 5px;
+    border-radius: 7px;
+    margin: 20px 10px;
+    cursor: pointer;
+}
+.songlist ul{
+    list-style: none;
 }
 .info{
-    width: 14vw;
+    width:auto;
 }
 .footer{
     position:absolute;
@@ -128,8 +138,9 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     overflow-y:scroll;
-    gap:25px;
+    gap:35px;
     max-height:72vh ;
+    cursor: pointer;
    
 }
 .pri{
@@ -161,9 +172,9 @@ main{
     position:fixed;
     bottom:15px;
     background-color: rgb(30, 30, 30);
-    width: 74%;
+    width: 72%;
     height: 6vh;
-    padding: 20px 0px;
+    padding: 20px 20px;
     border-radius:12px;
     left: 25.5vw;
     justify-content: space-between;
@@ -173,6 +184,7 @@ main{
 
 .songbtns{
     gap:9px;
+    cursor: pointer;
 }
 .seekbar{
     display: block;
@@ -180,9 +192,9 @@ main{
     border: 1px solid rgb(116, 111, 111);
     background-color: white;
     position:fixed;
-    bottom: 34px;
-    width: 73%;
-   cursor: pointer;
+    bottom: 30px;
+    width: 72%;
+    cursor: pointer;
 }
 .seekbar:hover{
     height: 0.5vh;
@@ -198,28 +210,41 @@ main{
     left: 0%;
     transition: left 0.5s;
     z-index: 10;
+    cursor: pointer;
+}
+.vol input{
+    width:100px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1280px)and (min-width: 700px){
     .left{
         position: absolute;
         left: -130%;
         transition: all .3s;
         z-index: 1;
-        width: 80vw;
-        background-color: black;
+        width: 55%;
         padding: 0;
         height: 100vh;
         position: fixed;
         top: 0;
     }
     .right{
-        width: max-content;
+        width:100%;
         left: auto;
         
     }
     .playbar {
       left: 12%;
+      flex-direction: column;
+      height: max-content;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      left: 0;
+    }
+    .seekbar{
+        width: 100%;
+       left: 0;
     }
     .ham{
         display:flex;
@@ -236,13 +261,51 @@ main{
 }
 
 @media screen and (max-width:700px){
+    .left{
+        position: absolute;
+        left: -130%;
+        transition: all .3s;
+        z-index: 1;
+        width: 55%;
+        padding: 0;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+    }
+    .right{
+        width:100%;
+        left: auto;
+    }
+    .playbar {
+      
+        flex-direction: column;
+        height: max-content;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        left: -10px
+    }
     .top{
         flex-direction: column;
     
     }
+    .left{
+        width:85%;
+    }
 
+   
     .btns{
         align-items: start;
         justify-content: center;
+    }
+    .ham{
+        display:flex;
+        
+    }
+    .close{
+        display: block;
+    }
+    .logo{
+        align-items: flex-start;
     }
 }
