@@ -16,19 +16,6 @@ function SecsToMins(seconds) {
 
     return `${formattedMinutes}:${formattedSeconds}`;
 }
-const playmusic = (track, pause = false) => {
-    currSong.src = `/SPOTIFY%20CL/${Currfolder}/` + track
-    if (!pause) {
-        currSong.play()
-        let pause = document.querySelector(".pause")
-        pause.src = "imgs/pause.svg"
-    }
-    document.querySelector(".songinfo").innerHTML = decodeURI(track)
-    document.querySelector(".songdur").innerHTML = "00:00 / 00:00"
-
-
-
-}
 
 async function getSongs(folder) {
     Currfolder = folder;
@@ -40,24 +27,24 @@ async function getSongs(folder) {
     let anchors = div.getElementsByTagName('a')
     array = Array.from(anchors)
     let songUL;
-    for (let index = 0; index < array.length; index++) {
-        const element = array[index];
-        if (element.href.includes(".mp3")) {
-            songs.push(element.href.split(`/${folder}/`)[1])
-
-        }
-        songUL = document.querySelector(".songlist").getElementsByTagName("ul")[0]
-        songUL.innerHTML = ""
-        for (const song of songs) {
-            songUL.innerHTML = songUL.innerHTML + `<li><img class="inv"  src="imgs/music.svg" alt="">
-                                    <div class="info">
-                                         ${song.replaceAll("%20"," ")}
-                                    </div>
-                                        <img class="inv" src="imgs/play.svg" alt="">
-                                     </li>`;
-        }
-
-
+        for (let index = 0; index < array.length; index++) {
+            const element = array[index];
+            if (element.href.includes(".mp3")) {
+                 songs.push(element.href.split(`/${folder}/`)[1])
+    
+            }
+         
+            songUL = document.querySelector(".songlist").getElementsByTagName("ul")[0]
+            songUL.innerHTML=""
+            for (const song of songs) {
+                songUL.innerHTML = songUL.innerHTML + `<li><img class="inv"  src="imgs/music.svg" alt="">
+                                        <div class="info">
+                                             ${song.replaceAll("%20"," ")}
+                                        </div>
+                                            <img class="inv" src="imgs/play.svg" alt="">
+                                         </li>`;
+            }
+    
 
     }
     Array.from(document.querySelector(".songlist").getElementsByTagName("li")).forEach(e => {
@@ -66,10 +53,29 @@ async function getSongs(folder) {
 
         })
     })
+    
 
 }
 
+function playmusic (track, pause = false) {
+    currSong.src = `/SPOTIFY%20CL/${Currfolder}/` + track
+    if (!pause) {
+        currSong.play()
+        let pause = document.querySelector(".pause")
+        pause.src = "imgs/pause.svg"
+    }
+    currSong.addEventListener("ended",()=>
+    {
+        next()
+    })
+       
+    
+    document.querySelector(".songinfo").innerHTML = decodeURI(track)
+    document.querySelector(".songdur").innerHTML = "00:00 / 00:00"
 
+
+
+}
 var paused = document.querySelector(".pause")
 paused.addEventListener("click", () => {
 
@@ -105,7 +111,7 @@ async function GetArts() {
 
             let CC = document.querySelector(".cardContainer")
             CC.innerHTML = CC.innerHTML + ` <div class="pri" data-folder="${folder}" >
-                                        <img src='/SPOTIFY%20CL/songs/${folder}/cover.jpeg' width="150vw" height="150vh" alt="pritam">
+                                        <img src='/SPOTIFY%20CL/songs/${folder}/cover.jpeg' width="160vw" height="160vh" alt="pritam">
                                         <h4>${response.title}</h4>
                         <h5>${response.desc}</h5>
                         <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512" width="38" height="38">
@@ -127,7 +133,6 @@ async function GetArts() {
 
 }
 GetArts()
-
 
 
     // Display all the albums on the page
@@ -157,7 +162,7 @@ GetArts()
 
     })
     let l;
-    document.querySelector(".prev").addEventListener("click", async () => {
+    async function prev(){
         await getSongs(Currfolder)
         l=songs.length
         let index = songs.indexOf(currSong.src.split("/").splice(-1)[0])
@@ -171,9 +176,13 @@ GetArts()
     
         }
    
+    }
+    document.querySelector(".prev").addEventListener("click", async () => {
+       prev()
     })
+ 
 
-    document.querySelector(".next").addEventListener("click", async () => {
+    async function next() {
         await getSongs(Currfolder)
         l=songs.length
         let index = songs.indexOf(currSong.src.split("/").slice(-1)[0])
@@ -184,6 +193,10 @@ GetArts()
         else{
             playmusic(songs[0])
         }
+        
+    }
+    document.querySelector(".next").addEventListener("click", async () => {
+        next()
     })
 
     document.querySelector(".vol").getElementsByTagName("input")[0].addEventListener("change",(e)=>{
