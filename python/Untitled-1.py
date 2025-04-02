@@ -8,27 +8,37 @@
     
 #     return ''.join(result)  # Convert the list back to a string
 
-def merged(d1,d2):
-    d3=d1.update(d2)
-    print(d3)
+# def merged(d1,d2):
+#     d3=d1.update(d2)
+#     print(d3)
+#
+# d4={1:"one"}
+# d5={2:"two"}
+#
+#
+# def is_prime(n):
+#     for i in range(2,n):
+#         if n%i==0:
+#             print("Not prime")
+#             break
+#
+#         else:
+#             print("prime")
+# # is_prime(901)
+#
+# def fn(frn,lsn):
+#     print(frn,'',lsn)
+#
+# # fn('jiya','jain')
 
-d4={1:"one"}
-d5={2:"two"}
+def arr(a,b):
+    c=[]
+    for i in b:
+        if i not in a:
+            c.append(i)
+    print(c)
 
 
-def is_prime(n):
-    for i in range(2,n):
-        if n%i==0:
-            print("Not prime")
-            break
-           
-        else:
-            print("prime")
-# is_prime(901)
-
-def fn(frn,lsn):
-    print(frn,'',lsn)
-
-# fn('jiya','jain')
-
-
+x=[1,2,3]
+y=[2,4]
+arr(x,y)
