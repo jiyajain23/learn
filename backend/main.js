@@ -6,20 +6,29 @@ app.use(express.static('public'))
 
 // app.get or app.post or app.put or app.delete(path, handler)
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.send('Hello World2!')
+}).post('/', (req, res) => {
+    console.log("Hey its a post request")
+    res.send('Hello World post!')
+}).put('/', (req, res) => {
+    console.log("Hey its a put request")
+    res.send('Hello World put!')
 })
-
 app.get('/about', (req, res) => {
-    res.send('About us')
+    res.send('About us!!!!!!')
 })
 
-app.get('/contact', (req, res) => {
-    res.send('Hello contact me!')
+app.get("/index", (req, res) => {
+    console.log("index page")
+    res.sendFile(__dirname + '/public/temp.html')
 })
+// app.get('/contact', (req, res) => {
+//     res.send('Hello contact me!')
+// })
 
-app.get('/blog', (req, res) => {
-    res.send('Hello blog!')
-})
+// app.get('/blog', (req, res) => {
+//     res.send('Hello blog!')
+// })
 
 app.get('/blog/:slug', (req, res) => {
     // logic to fetch {slug} from the db
