@@ -10,12 +10,13 @@
     <script>
         async function testPost() {
             let a= await fetch("/", {
-                method: "PUT"
+                method: "POST"
+               
             });
-        let b= await a.text();
-        console.log(b);
+            let b= await a.text();
+            console.log(b);
         }
-        testPost();
+    testPost();
     </script>
 </body>
 </html>

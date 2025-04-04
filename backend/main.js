@@ -19,9 +19,9 @@ app.get('/about', (req, res) => {
 })
 
 app.get("/index", (req, res) => {
-    console.log("index page")
     res.sendFile(__dirname + '/public/temp.html')
 })
+
 // app.get('/contact', (req, res) => {
 //     res.send('Hello contact me!')
 // })
