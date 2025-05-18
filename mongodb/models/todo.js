@@ -7,4 +7,4 @@ const TodoSchema = new mongoose.Schema({
     days: Number
 });
 
-export const Todo = mongoose.model('Todo', TodoSchema);
+export const Todo = mongoose.model('todo', TodoSchema);

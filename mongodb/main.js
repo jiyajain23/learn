@@ -15,11 +15,11 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
-// app.get('/a', async (req, res) => { 
-//     let todo = await Todo.findOne({})
-//     console.log(todo)
-//     res.json({title: todo.title, desc: todo.desc})
-// })
+app.get('/a', async (req, res) => { 
+    let todo = await Todo.findOne({})
+    console.log(todo)
+    res.json({title: todo.title, desc: todo.desc})
+})
 
 
 
